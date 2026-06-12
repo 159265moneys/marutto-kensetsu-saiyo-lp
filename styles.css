@@ -754,15 +754,24 @@ a { color: inherit; text-decoration: none; }
 
 .results__logos {
   margin: 3.2rem auto 0;
-  background: rgba(255, 255, 255, .85);
-  border: .2rem dashed #9fc4dd;
+  background: #fff;
   border-radius: 1.2rem;
-  padding: 2.6rem;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #6b8aa5;
-  letter-spacing: .12em;
+  padding: 2.4rem 2rem;
+  box-shadow: 0 .4rem 1.4rem rgba(20, 60, 110, .15);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1.6rem;
+  align-items: center;
+}
+.results__logos li {
+  display: grid;
+  place-items: center;
+}
+.results__logos img {
+  max-height: 4.4rem;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 /* 応募単価 */
@@ -2156,7 +2165,8 @@ a { color: inherit; text-decoration: none; }
   .results__cards .label { font-size: 14px; }
   .results__cards .num em { font-size: 46px; }
   .results__cards .num small { font-size: 16px; }
-  .results__logos { font-size: 12px; padding: 18px; margin-top: 24px; border-radius: 10px; }
+  .results__logos { padding: 18px 14px; margin-top: 24px; border-radius: 10px; gap: 14px 10px; }
+  .results__logos img { max-height: 26px; }
   .tanka { margin-top: 42px; padding: 0 12px 16px; border-radius: 14px; }
   .tanka__ribbon { font-size: 13.5px; padding: 8px 16px; }
   .tanka__list { gap: 12px; }
