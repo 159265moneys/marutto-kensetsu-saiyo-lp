@@ -515,9 +515,10 @@ a { color: inherit; text-decoration: none; }
 /* 生成画像スロット：assets/gen/cta-woman.png を置くと表示される */
 .cta__woman {
   position: absolute;
-  left: -.4rem;
-  bottom: 13.8rem; /* オレンジボタン上辺に下辺を接着 */
-  width: 15.5rem;
+  left: .4rem;
+  bottom: 13.8rem; /* オレンジボタン上辺に下辺を接着・高さ固定でバストアップ */
+  height: 19.5rem;
+  width: auto;
   pointer-events: none;
   z-index: 0;
   filter: drop-shadow(.3rem .5rem .8rem rgba(120, 90, 0, .28));
@@ -525,7 +526,7 @@ a { color: inherit; text-decoration: none; }
 .cta__offer {
   position: relative;
   z-index: 2;
-  margin-left: 15.5rem; /* 人物カラムを避けて右カラムでセンタリング */
+  margin-left: 18.5rem; /* 人物カラムを避けて右カラムでセンタリング */
 }
 .cta .btn-cta, .cta__note {
   position: relative;
@@ -567,7 +568,7 @@ a { color: inherit; text-decoration: none; }
 }
 .cta__price s {
   color: #55606e;
-  font-size: 2.9rem;
+  font-size: 2.7rem;
   font-weight: 900;
   text-decoration-thickness: .35rem;
   text-decoration-color: var(--red);
@@ -2112,7 +2113,7 @@ a { color: inherit; text-decoration: none; }
   .cta__badge span { font-size: 12px; }
   .cta__badge b { font-size: 28px; -webkit-text-stroke-width: 3px; }
   /* スマホは全幅センター。人物は価格行に届かない高さまで縮小 */
-  .cta__woman { width: 96px; left: -4px; bottom: 101px; top: auto; }
+  .cta__woman { height: 96px; width: auto; left: -6px; bottom: 101px; top: auto; }
   .cta__offer { margin-left: 0; }
   .cta__price { white-space: nowrap; }
   .cta__pill { font-size: 15px; padding: 6px 18px; border-width: 2px; }
