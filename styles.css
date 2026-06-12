@@ -768,9 +768,9 @@ a { color: inherit; text-decoration: none; }
   place-items: center;
 }
 .results__logos img {
-  max-height: 4.4rem;
-  max-width: 100%;
+  height: 3.8rem; /* 全ロゴ同一高さ（最横長のWILLOFが見切れない上限） */
   width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 
@@ -1010,10 +1010,11 @@ a { color: inherit; text-decoration: none; }
 /* 生成画像スロット：assets/gen/solution-woman.png を置くと表示される */
 .solution__woman {
   position: absolute;
-  bottom: .8rem;
+  bottom: 1rem;
   left: 50%;
   translate: -50% 0;
-  width: 14.6rem;
+  height: 15rem; /* 縦の絶対値で固定（バストアップcrop） */
+  width: auto;
   z-index: 1;
   pointer-events: none;
 }
@@ -2165,8 +2166,8 @@ a { color: inherit; text-decoration: none; }
   .results__cards .label { font-size: 14px; }
   .results__cards .num em { font-size: 46px; }
   .results__cards .num small { font-size: 16px; }
-  .results__logos { padding: 18px 14px; margin-top: 24px; border-radius: 10px; gap: 14px 10px; }
-  .results__logos img { max-height: 26px; }
+  .results__logos { grid-template-columns: 1fr 1fr; padding: 18px 14px; margin-top: 24px; border-radius: 10px; gap: 16px 12px; }
+  .results__logos img { height: 27px; }
   .tanka { margin-top: 42px; padding: 0 12px 16px; border-radius: 14px; }
   .tanka__ribbon { font-size: 13.5px; padding: 8px 16px; }
   .tanka__list { gap: 12px; }
@@ -2201,7 +2202,7 @@ a { color: inherit; text-decoration: none; }
   .solution__kaiketsu { font-size: 16px; line-height: 1.5; }
   .solution__kaiketsu em { font-size: 24px; }
   .solution__kaiketsu b { font-size: 19px; }
-  .solution__woman { width: 72px; bottom: 3px; }
+  .solution__woman { height: 74px; width: auto; bottom: 3px; }
   .solution__lead { font-size: 17px; margin-top: 26px; }
   .solution__body { font-size: 14.5px; line-height: 1.95; margin-top: 12px; }
   .solution__body br { display: none; }
