@@ -65,6 +65,7 @@ body {
 img { display: block; max-width: 100%; height: auto; }
 ul, ol { list-style: none; }
 a { color: inherit; text-decoration: none; }
+.nw { white-space: nowrap; }
 
 .shell {
   width: 100%;
@@ -990,10 +991,10 @@ a { color: inherit; text-decoration: none; }
 /* 生成画像スロット：assets/gen/solution-woman.png を置くと表示される */
 .solution__woman {
   position: absolute;
-  bottom: 1.8rem;
+  bottom: .6rem;
   left: 50%;
   translate: -50% 0;
-  width: 23rem;
+  width: 20rem;
   z-index: 1;
   pointer-events: none;
   mix-blend-mode: multiply;
@@ -1002,11 +1003,14 @@ a { color: inherit; text-decoration: none; }
 .solution__kaiketsu {
   position: relative;
   z-index: 2;
-  padding-top: 9.4rem;
+  padding-top: 8.8rem;
   font-size: 2.9rem;
   font-weight: 900;
   color: var(--navy-ink);
   line-height: 1.45;
+  -webkit-text-stroke: .6rem #fff;
+  paint-order: stroke fill;
+  text-shadow: 0 0 1rem rgba(255, 255, 255, .9);
 }
 .solution__kaiketsu em {
   font-style: normal;
@@ -2169,6 +2173,7 @@ a { color: inherit; text-decoration: none; }
   .solution__lead { font-size: 17px; margin-top: 26px; }
   .solution__body { font-size: 14.5px; line-height: 1.95; margin-top: 12px; }
   .solution__body br { display: none; }
+  .solution__body strong { display: block; margin-top: 2px; }
   .solution__jobs { margin-top: 30px; padding: 24px 16px; border-radius: 14px; }
   .solution__jobs h3 { font-size: 18px; border-bottom-width: 3px; margin-bottom: 18px; padding-bottom: 4px; }
   .solution__jobs ul { gap: 8px; }
@@ -2191,10 +2196,11 @@ a { color: inherit; text-decoration: none; }
   .secret-card__bar em { font-size: 25px; -webkit-text-stroke-width: 5px; }
   .secret-card__num { width: 48px; height: 48px; font-size: 18px; margin-top: 18px; }
   .secret-card__figure { width: 152px; margin-top: 16px; }
-  .pill-main { width: auto; max-width: 94%; font-size: 15.5px; line-height: 1.5; padding: 7px 14px; border-radius: 6px; }
+  .pill-main { width: auto; max-width: 96%; font-size: 14px; line-height: 1.5; padding: 7px 12px; border-radius: 6px; }
   .pill-sub { width: auto; max-width: 94%; font-size: 12.5px; line-height: 1.6; padding: 4px 12px; margin-top: 10px; }
   .secret-card__text { font-size: 14.5px; line-height: 1.95; padding: 0 18px; margin-top: 16px; }
   .secret-card__text br { display: none; }
+  .secret-card__text strong { display: block; margin-top: 2px; }
 
   /* ---- 強い理由 ---- */
   .strength { padding: 56px 20px; }
@@ -2204,6 +2210,7 @@ a { color: inherit; text-decoration: none; }
   .strength__chips li { font-size: 12.5px; padding: 4px 12px; }
   .strength__text { font-size: 14.5px; line-height: 1.95; margin-top: 20px; }
   .strength__text br { display: none; }
+  .strength__text strong { display: block; margin-top: 2px; }
   .strength__text strong { font-size: 15px; }
   .strength__formula { font-size: 16px; line-height: 1.7; padding: 13px 18px; margin-top: 28px; border-radius: 10px; }
   .strength__formula br { display: none; }
@@ -2229,6 +2236,7 @@ a { color: inherit; text-decoration: none; }
   .voice-card__result em { font-size: 18px; }
   .voice-card__text { font-size: 14.5px; line-height: 1.9; margin-top: 12px; }
   .voice-card__text br { display: none; }
+  .voice-card__text strong { display: block; margin-top: 2px; }
   .voice-card__metric { font-size: 14px; padding-top: 12px; margin-top: 14px; }
   .voice-card__metric em { font-size: 17px; }
 
