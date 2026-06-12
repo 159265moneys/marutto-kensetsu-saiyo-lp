@@ -1,3 +1,4 @@
 *.bak
 .claude/
 .DS_Store
+assets/_masters/

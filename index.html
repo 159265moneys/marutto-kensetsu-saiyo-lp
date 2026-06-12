@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=M+PLUS+Rounded+1c:wght@800;900&family=Dela+Gothic+One&family=Yusei+Magic&family=Work+Sans:wght@500;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260611-html-rebuild-2">
+  <link rel="stylesheet" href="styles.css?v=20260612-gen-2">
 </head>
 <body id="top">
 
@@ -58,7 +58,9 @@
           <p class="fv__main">＝<b>10万円</b><span class="q">!?</span></p>
         </div>
         <figure class="fv__photo">
-          <img src="assets/construction-hero.png" alt="建設現場で働く施工管理・職人たち" width="1694" height="928">
+          <!-- assets/gen/fv-crowd.jpg を置けば自動で差し替わる（無ければ既存写真） -->
+          <img src="assets/gen/fv-crowd.jpg" alt="建設現場で働く施工管理・職人たち"
+               onerror="this.onerror=null;this.src='assets/construction-hero.png'">
         </figure>
         <p class="fv__callout">
           <span class="line1">「建設業界でそんな応募数、あるわけない」</span>
@@ -82,6 +84,7 @@
     <section class="cta">
       <div class="cta__inner">
         <div class="cta__badge" aria-hidden="true">毎月<b>5</b>社限定</div>
+        <img class="cta__woman" src="assets/gen/cta-woman.jpg" alt="" onerror="this.style.display='none'">
         <p class="cta__pill">【初月限定】最大<b>90</b><small>%</small>OFF!</p>
         <p class="cta__price"><s>100,000円</s><span class="arrow">→</span><em>1万円</em><span class="ex">!</span></p>
         <p class="cta__free">＼ ご相談は完全無料！ ／</p>
@@ -120,14 +123,17 @@
         <li>
           <span class="label">累計支援実績</span>
           <span class="num"><em>700</em><small>社以上</small></span>
+          <span class="art" aria-hidden="true"><img loading="lazy" src="assets/illust/stat-chart.jpg" alt=""></span>
         </li>
         <li>
           <span class="label">契約継続率</span>
           <span class="num"><em>95</em><small>%</small></span>
+          <span class="art" aria-hidden="true"><img loading="lazy" src="assets/illust/stat-handshake.jpg" alt=""></span>
         </li>
         <li>
           <span class="label">顧客満足度</span>
           <span class="num"><em>98</em><small>%</small></span>
+          <span class="art" aria-hidden="true"><img loading="lazy" src="assets/illust/stat-stars.jpg" alt=""></span>
         </li>
       </ul>
 
@@ -139,22 +145,22 @@
           <li>
             <div class="job"><b>施工管理</b></div>
             <div class="price"><span class="badge">応募単価</span><span class="v"><em>2,400</em>円〜</span></div>
-            <span class="icon" aria-hidden="true">👷</span>
+            <span class="icon" aria-hidden="true"><img loading="lazy" src="assets/illust/job-sekkan.jpg" alt=""></span>
           </li>
           <li>
             <div class="job"><b>現場作業員</b></div>
             <div class="price"><span class="badge">応募単価</span><span class="v"><em>980</em>円〜</span></div>
-            <span class="icon" aria-hidden="true">🏗️</span>
+            <span class="icon" aria-hidden="true"><img loading="lazy" src="assets/illust/job-genba.jpg" alt=""></span>
           </li>
           <li>
             <div class="job"><b>電気工事士</b></div>
             <div class="price"><span class="badge">応募単価</span><span class="v"><em>1,900</em>円〜</span></div>
-            <span class="icon" aria-hidden="true">⚡</span>
+            <span class="icon" aria-hidden="true"><img loading="lazy" src="assets/illust/job-denki.jpg" alt=""></span>
           </li>
           <li>
             <div class="job"><b>CADオペ</b></div>
             <div class="price"><span class="badge">応募単価</span><span class="v"><em>1,200</em>円〜</span></div>
-            <span class="icon" aria-hidden="true">📐</span>
+            <span class="icon" aria-hidden="true"><img loading="lazy" src="assets/illust/job-cad.jpg" alt=""></span>
           </li>
         </ul>
         <p class="tanka__note">※掲載前に職種、地域、条件ごとに試算します。</p>
@@ -175,7 +181,9 @@
         <li style="--rot:.6deg" class="r">媒体会社に言われるまま課金して、<br>結局応募単価が合わない</li>
       </ul>
       <div class="worries__people" aria-hidden="true">
-        <span>？</span><span>？</span><span>？</span>
+        <div class="wp"><span class="q">？</span><img loading="lazy" src="assets/illust/worry-1.jpg" alt=""></div>
+        <div class="wp"><span class="q">？</span><img loading="lazy" src="assets/illust/worry-2.jpg" alt=""></div>
+        <div class="wp"><span class="q">？</span><img loading="lazy" src="assets/illust/worry-3.jpg" alt=""></div>
       </div>
     </section>
 
@@ -186,6 +194,7 @@
 
       <div class="solution__burstwrap">
         <div class="solution__burst" aria-hidden="true"></div>
+        <img class="solution__woman" src="assets/gen/solution-woman.jpg" alt="" onerror="this.style.display='none'">
         <p class="solution__kaiketsu"><em>10万円台〜</em>で<br><b>解決できちゃうかも!?</b></p>
       </div>
 
@@ -208,6 +217,7 @@
     <section class="cta">
       <div class="cta__inner">
         <div class="cta__badge" aria-hidden="true">毎月<b>5</b>社限定</div>
+        <img class="cta__woman" src="assets/gen/cta-woman.jpg" alt="" onerror="this.style.display='none'">
         <p class="cta__pill">【初月限定】最大<b>90</b><small>%</small>OFF!</p>
         <p class="cta__price"><s>100,000円</s><span class="arrow">→</span><em>1万円</em><span class="ex">!</span></p>
         <p class="cta__free">＼ ご相談は完全無料！ ／</p>
@@ -241,6 +251,9 @@
         <article class="secret-card">
           <header class="secret-card__bar">選ばれる秘訣<em>1</em></header>
           <div class="secret-card__num" aria-hidden="true">01</div>
+          <figure class="secret-card__figure">
+            <img loading="lazy" src="assets/gen/secret-1.jpg" alt="" onerror="this.parentElement.style.display='none'">
+          </figure>
           <p class="pill-main">【代行費10万円台〜のみ】</p>
           <p class="pill-sub">高額な成果報酬・不要な媒体費を前提にしない</p>
           <p class="secret-card__text">
@@ -252,6 +265,9 @@
         <article class="secret-card">
           <header class="secret-card__bar">選ばれる秘訣<em>2</em></header>
           <div class="secret-card__num" aria-hidden="true">02</div>
+          <figure class="secret-card__figure">
+            <img loading="lazy" src="assets/gen/secret-2.jpg" alt="" onerror="this.parentElement.style.display='none'">
+          </figure>
           <p class="pill-main">【無料求人媒体のアルゴリズムを取りにいく】</p>
           <p class="pill-sub">無料媒体を中心としたアルゴリズムハック</p>
           <p class="secret-card__text">
@@ -263,6 +279,9 @@
         <article class="secret-card">
           <header class="secret-card__bar">選ばれる秘訣<em>3</em></header>
           <div class="secret-card__num" aria-hidden="true">03</div>
+          <figure class="secret-card__figure">
+            <img loading="lazy" src="assets/gen/secret-3.jpg" alt="" onerror="this.parentElement.style.display='none'">
+          </figure>
           <p class="pill-main">【丸投げでOK】</p>
           <p class="pill-sub">求人票からスカウト・採用SNS・候補者対応まで一気通貫</p>
           <p class="secret-card__text">
@@ -320,6 +339,7 @@
       <article class="voice-card">
         <span class="voice-card__tag">建設業</span>
         <h3 class="voice-card__company">建設業 A社</h3>
+        <figure class="voice-card__visual"><img loading="lazy" src="assets/illust/voice-a.jpg" alt=""></figure>
         <p class="voice-card__result">施工管理歴<em>20年</em>の経験者採用に成功</p>
         <p class="voice-card__text">
           有資格者から応募が来ると思っていなかった。<br>
@@ -331,6 +351,7 @@
       <article class="voice-card">
         <span class="voice-card__tag voice-card__tag--g">設備工事</span>
         <h3 class="voice-card__company">設備工事 B社</h3>
+        <figure class="voice-card__visual"><img loading="lazy" src="assets/illust/voice-b.jpg" alt=""></figure>
         <p class="voice-card__result">職人応募が<em>月40件超</em>まで改善</p>
         <p class="voice-card__text">
           現場エリア、資格支援、社用車、残業の見せ方を整理し、<br>
@@ -342,6 +363,7 @@
       <article class="voice-card">
         <span class="voice-card__tag voice-card__tag--o">工務店</span>
         <h3 class="voice-card__company">工務店 C社</h3>
+        <figure class="voice-card__visual"><img loading="lazy" src="assets/illust/voice-c.jpg" alt=""></figure>
         <p class="voice-card__result">求人公開後<em>すぐに面接候補</em>を確保</p>
         <p class="voice-card__text">
           求人票のタイトルと条件の出し方を変更し、<br>
@@ -374,6 +396,7 @@
         <li>スカウト文面作成</li><li>候補者対応</li><li>改善レポート</li>
       </ul>
 
+      <img class="plan__duo" src="assets/gen/plan-duo.jpg" alt="" onerror="this.style.display='none'">
       <p class="plan__yasu">こんなに安く〜!?</p>
     </section>
 
@@ -381,6 +404,7 @@
     <section class="cta">
       <div class="cta__inner">
         <div class="cta__badge" aria-hidden="true">毎月<b>5</b>社限定</div>
+        <img class="cta__woman" src="assets/gen/cta-woman.jpg" alt="" onerror="this.style.display='none'">
         <p class="cta__pill">【初月限定】最大<b>90</b><small>%</small>OFF!</p>
         <p class="cta__price"><s>100,000円</s><span class="arrow">→</span><em>1万円</em><span class="ex">!</span></p>
         <p class="cta__free">＼ ご相談は完全無料！ ／</p>
